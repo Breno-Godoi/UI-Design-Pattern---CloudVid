@@ -1,0 +1,265 @@
+html  {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/* Global Styles */
+body {
+    font-family: "Kanit", Arial, sans-serif;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Handlee", Arial, sans-serif;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #322315;
+  }
+  
+  p,
+  blockquote {
+    font-family: "Dosis", Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #322315;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #322315;
+    margin-top: 20px;
+  }
+  
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #84b5b5;
+    padding-left: 20px;
+  }
+  
+  header {
+    background-color: #d16b42;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Align items vertically */
+  }
+
+  .container-main{
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 2.5rem;
+  }
+
+  /* Navigation Menu Styles */
+
+  .navbar-nav{
+    display: none;
+  }
+
+  .navbar {
+    background-color: #d8ba8e;
+    margin-bottom: 0px;
+  }
+
+  .container{
+    display: block;
+    margin: 0;
+    padding: 10 0 0 10;
+    box-sizing: inherit;
+    font-family: inherit;
+  }
+
+  /* menu mobile*/
+
+  .header-main-ham-menu{
+    width: 30px;
+  }
+
+  .header-main-ham-menu-close{
+    width: 30px;
+  }
+
+.disp-none{
+    display: none;
+}
+
+.header-main-ham-menu-cont{
+    width: 40px;
+    cursor: pointer;
+}
+
+.header-sm-menu{
+  background: #d8ba8e;
+  color: black;
+  display: none;
+  margin: 0px;
+  top: 100%;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.header-sm-menu--active{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-end: 1em;
+  padding-inline-start: 30px;
+}
+
+li{
+  list-style: none;
+}
+
+.nav-link{
+  font-family: "Kanit", Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.header-sm-menu-link{
+  display: block;
+  text-decoration: none;
+  padding: 1rem 2rem 1rem 1rem;
+  font-size: 1.5rem;
+  color: black;
+  text-align: left;
+  border-bottom: 1px solid hsl(204, 77%, 26%);
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  transition: color .3s;
+}
+
+  
+  /* Color Palette Styles */
+  .color-palette {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .color-box {
+    text-align: center; /* Center the content within the color box */
+    padding: 20px; /* Add padding to provide space around the content */
+    border-radius: 10px; /* Reduce border radius for a more rectangular appearance */
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; /* Set the text color to white */
+  }
+  
+  .color-label {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .color-tag {
+    font-size: 12px; /* Adjust the font size of the color tag */
+    color: #fff; /* Set the text color to white */
+  }
+  
+  /* Layout Preview Styles */
+  .layout-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Typography Styles */
+  
+  blockquote {
+    font-style: italic;
+    border-left: 4px solid #84b5b5;
+    padding-left: 20px;
+  }
+  
+  /* Data Visualization Styles */
+  .chart-preview {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .col-md-6 h1 {
+      color: #322315;
+  }
+  
+  /* UI Component Styles */
+  .card {
+    margin-top: 20px;
+  }
+  
+  .card-header {
+    background-color: #333;
+    color: #fff;
+    background-color: #946e45;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
+  .card-img-top {
+      height: 150px;
+      width: 200px;
+  }
+  
+  .btn-primary {
+    background-color: #91c07d;
+    border: 1px solid #769c60;
+  }
+  
+  .btn-primary:hover {
+    background-color: #769c60; /* Set a darker background color when hovering */
+    border-color: #769c60;
+  }
+  
+  .btn-secondary {
+    background-color: #b85229;
+    border: 1px solid #b85229;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  
+  .logo img {
+    width: 55%;
+    height: auto;
+    margin-right: 50px;
+  }
+  

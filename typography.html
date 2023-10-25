@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UI Pattern Library - Group 5</title>
+    <link rel="CloudVid icon" href="images/logo-ico.ico" type="image/CloudVid"/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
@@ -22,7 +23,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/small-style.css" />
+    <link rel="stylesheet" href="styles/medium-style.css" />
+    <link rel="stylesheet" href="styles/large-style.css" />
   </head>
   <body>
     <header>
@@ -31,6 +34,8 @@
       </div>
       <h1>Cloud Vid Pattern Library - Group 5</h1>
     </header>
+
+
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <ul class="navbar-nav">
@@ -40,22 +45,61 @@
           <li class="nav-item">
             <a class="nav-link" href="components.html">UI Components</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="color.html">Color</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="layouts.html">Page Layouts</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="typography.html">Typography</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="visualization.html">Data Visualization</a>
           </li>
         </ul>
+        <div class="header-main-ham-menu-cont">
+          <img
+            src="images\menu-hamburguer.png"
+            alt="hamburger menu"
+            class="header-main-ham-menu"
+            id="hamburger-menu"
+          />
+          <img
+            src="images\x.png"
+            alt="hamburger menu close"
+            class="header-main-ham-menu-close disp-none"
+            id="close-menu"
+          />
+        </div>
       </div>
     </nav>
-    <main class="container">
+
+    <div class="header-sm-menu">
+        <ul class=" header-sm-menu-links">
+          <li class="header-sm-menu-link">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="components.html">UI Components</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="color.html">Color</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="layouts.html">Page Layouts</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="typography.html">Typography</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="visualization.html">Data Visualization</a>
+                </li>
+              </ul>
+          </div>
+
+
+    <main class="container-main">
       <section id="typography">
         <h2>Typography</h2>
         <p>
@@ -105,4 +149,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script src='script/menu.js'></script>
 </html>

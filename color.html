@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UI Pattern Library - Group 5</title>
+    <link rel="CloudVid icon" href="images/logo-ico.ico" type="image/CloudVid"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit&display=swap" />
@@ -13,7 +14,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/small-style.css" />
+    <link rel="stylesheet" href="styles/medium-style.css" />
+    <link rel="stylesheet" href="styles/large-style.css" />
   </head>
   <body>
     <header>
@@ -44,9 +47,46 @@
             <a class="nav-link" href="visualization.html">Data Visualization</a>
           </li>
         </ul>
+        <div class="header-main-ham-menu-cont">
+          <img
+            src="images\menu-hamburguer.png"
+            alt="hamburger menu"
+            class="header-main-ham-menu"
+            id="hamburger-menu"
+          />
+          <img
+            src="images\x.png"
+            alt="hamburger menu close"
+            class="header-main-ham-menu-close disp-none"
+            id="close-menu"
+          />
+        </div>
       </div>
     </nav>
-    <main class="container">
+
+    <div class="header-sm-menu">
+        <ul class=" header-sm-menu-links">
+          <li class="header-sm-menu-link">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="components.html">UI Components</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="color.html">Color</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="layouts.html">Page Layouts</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="typography.html">Typography</a>
+                </li>
+                <li class="header-sm-menu-link">
+                  <a class="nav-link" href="visualization.html">Data Visualization</a>
+                </li>
+              </ul>
+          </div>
+    <main class="container-main">
       <section id="color">
         <h2>Color Palette</h2>
         <p>
@@ -55,31 +95,31 @@
 
         <div class="color-palette row">
           <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" id="color1">
+              <div class="color-box" style="background-color: #d16b42">
                   <div class="color-label">Color 1</div>
                   <div class="color-tag">#d16b42</div>
               </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" id="color2">
+              <div class="color-box" style="background-color: #D8BA8E">
                   <div class="color-label">Color 2</div>
                   <div class="color-tag">#D8BA8E</div>
               </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" id="color3">
+              <div class="color-box" style="background-color: #322315">
                   <div class="color-label">Color 3</div>
                   <div class="color-tag">#322315</div>
               </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" id="color4">
+              <div class="color-box" style="background-color: #946E45">
                   <div class="color-label">Color 4</div>
                   <div class="color-tag">#946E45</div>
               </div>
           </div>
           <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" id="color5">
+              <div class="color-box" style="background-color: #91C07D">
                   <div class="color-label">Color 5</div>
                   <div class="color-tag">#91C07D</div>
               </div>
@@ -99,4 +139,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script src='script/menu.js'></script>
 </html>
