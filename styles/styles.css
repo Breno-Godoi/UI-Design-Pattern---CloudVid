@@ -206,6 +206,50 @@ blockquote {
   border: 1px solid #b85229;
 }
 
+/* snippet box style */
+
+pre {
+  position: relative;
+  background: #dac4a3;
+  padding: 10px;
+  font-size: 15px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border: 1px solid #e6e7e9;
+  margin: 5%;
+}
+
+.snippet {
+  position: relative;
+  display: inline-block;
+}
+
+.copy-button {
+position: absolute;
+top: 2px;
+right: 10px;
+cursor: pointer;
+color: #fff;
+background: #322315;
+border-radius: 0.5em;
+padding: 2px 7px;
+}
+
+.copy-button:hover{
+color: #000;
+}
+
+.breadcrumb-text-color .breadcrumb-item a {
+  color: #91C07D;
+}
+
+.hr-separator {
+  border: 3px solid #322315;
+  background-color: #322315;
+  height: 8px;
+  margin: 20px 0;
+}
+
 /* Logo Styles */
 .logo {
   padding: 10px;

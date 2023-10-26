@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UI Pattern Library - Group 5</title>
-    <link rel="CloudVid icon" href="images/logo-ico.ico" type="image/CloudVid"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit&display=swap" />
+    <link
+      rel="CloudVid icon"
+      href="images/logo-ico.ico"
+      type="image/CloudVid"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,11 +34,10 @@
   <body>
     <header>
       <div class="logo">
-        <img src="images/logo.png" alt="Company Logo">
-    </div>
+        <img src="images/logo.png" alt="Company Logo" />
+      </div>
       <h1>Cloud Vid Pattern Library - Group 5</h1>
     </header>
-
 
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -67,27 +79,27 @@
     </nav>
 
     <div class="header-sm-menu">
-        <ul class=" header-sm-menu-links">
-          <li class="header-sm-menu-link">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="components.html">UI Components</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="color.html">Color</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="layouts.html">Page Layouts</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="typography.html">Typography</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="visualization.html">Data Visualization</a>
-                </li>
-              </ul>
-          </div>
+      <ul class="header-sm-menu-links">
+        <li class="header-sm-menu-link">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="header-sm-menu-link">
+          <a class="nav-link" href="components.html">UI Components</a>
+        </li>
+        <li class="header-sm-menu-link">
+          <a class="nav-link" href="color.html">Color</a>
+        </li>
+        <li class="header-sm-menu-link">
+          <a class="nav-link" href="layouts.html">Page Layouts</a>
+        </li>
+        <li class="header-sm-menu-link">
+          <a class="nav-link" href="typography.html">Typography</a>
+        </li>
+        <li class="header-sm-menu-link">
+          <a class="nav-link" href="visualization.html">Data Visualization</a>
+        </li>
+      </ul>
+    </div>
 
     <main class="container-main">
       <section id="components">
@@ -97,46 +109,157 @@
           in your data dashboard projects.
         </p>
 
-        <div class="card">
-          <div class="card-header">
-            <h3>Button</h3>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Primary Button</h4>
-            <p class="card-text">A primary button for important actions.</p>
-            <button class="btn btn-primary">Click Me</button>
+        <hr class="hr-separator" />
 
-            <h4 class="card-title mt-4">Secondary Button</h4>
-            <p class="card-text">
-              A secondary button for less important actions.
-            </p>
-            <button class="btn btn-secondary">Click Me</button>
-          </div>
+        <!-- Button Component -->
+        <div class="component">
+          <h3>Button</h3>
+          <p>A collection of buttons for various actions.</p>
+          
+          <!-- Primary Button -->
+          <button class="btn btn-primary">Primary Button</button>
+          
+          <!-- Secondary Button (color: #d16b42) -->
+          <button class="btn btn-secondary" style="background-color: #d16b42; border: 1px solid #322315;">Secondary Button</button>
+          
+          <!-- Custom Button (color: #322315) -->
+          <button class="btn custom-button" style="background-color: #322315; color: #fff;">Custom Button</button>
+
+          <!-- Button Component Code -->
+          <pre>
+            &lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+            
+            &lt;button class="btn btn-secondary" style="background-color: #d16b42; border: 1px solid #322315;"&gt;Secondary Button&lt;/button&gt;
+            
+            &lt;button class="btn custom-button" style="background-color: #322315; color: #fff;"&gt;Custom Button&lt;/button&gt;
+          </pre>
         </div>
 
-        <div class="card mt-4">
-          <div class="card-header">
-            <h3>Card</h3>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Feature Card</h4>
-            <p class="card-text">
-              A card to showcase a key feature or content.
-            </p>
-            <div class="card">
-              <img
-                src="images/logo.png"
-                alt="Feature Card Image"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Feature Title</h5>
-                <p class="card-text">Feature description goes here.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
-              </div>
+        <hr class="hr-separator" />
+
+        <!-- Card Component -->
+        <div class="component">
+          <h3>Card</h3>
+          <p>A card to showcase a key feature or content.</p>
+          <div class="card">
+            <img
+              src="images/logo.png"
+              alt="Feature Card Image"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Feature Title</h5>
+              <p class="card-text">Feature description goes here.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
+
+          <!-- Card Component Code -->
+          <pre>
+            &lt;div class="card"&gt;
+              &lt;img src="images/logo.png" alt="Feature Card Image" class="card-img-top" /&gt;
+              &lt;div class="card-body"&gt;
+                &lt;h5 class="card-title"&gt;Feature Title&lt;/h5&gt;
+                &lt;p class="card-text"&gt;Feature description goes here.&lt;/p&gt;
+                &lt;a href="#" class="btn btn-primary"&gt;Learn More&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
         </div>
+
+        <hr class="hr-separator" />
+
+        <!-- Breadcrumb Component -->
+        <nav aria-label="breadcrumb" class="component">
+          <h3>Breadcrumb</h3>
+          <p>
+            A breadcrumb navigation component to indicate the current page's location.
+          </p>
+          <ol class="breadcrumb breadcrumb-text-color">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+          <!-- Breadcrumb Component Code -->
+          <pre>
+            &lt;ol class="breadcrumb breadcrumb-text-color"&gt;
+              &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="breadcrumb-item active" aria-current="page"&gt;Data&lt;/li&gt;
+            &lt;/ol&gt;
+          </pre>
+        </div>
+
+        <hr class="hr-separator" />
+
+        <!-- Preloader Component -->
+        <div class="component">
+          <h3>Preloader</h3>
+          <p>A preloader component to indicate that content is loading.</p>
+          <div class="spinner-border" style="color: #91c07d" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <!-- Preloader Component Code -->
+          <pre>
+            &lt;div class="spinner-border" style="color: #91C07D;" role="status"&gt;
+              &lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;
+            &lt;/div&gt;
+          </pre>
+        </div>
+
+        <hr class="hr-separator" />
+
+        <!-- Progress Bar Component -->
+        <div class="component">
+          <h3>Progress Bar</h3>
+          <p>A progress bar component to display the progress of a task.</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #91C07D;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <!-- Progress Bar Component Code -->
+          <pre>
+            &lt;div class="progress"&gt;
+              &lt;div class="progress-bar" role="progressbar" style="width: 70%; background-color: #91C07D;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+        </div>
+
+        <hr class="hr-separator" />
+
+        <!-- Alerts Component -->
+        <div class="component">
+          <h3>Alerts</h3>
+          <p>Alert components to provide feedback messages to users.</p>
+
+          <div class="alert alert-success" role="alert" style="background-color: #91C07D;">
+            This is a success alert.
+          </div>
+
+          <div class="alert alert-danger" role="alert" style="background-color: #d16b42;">
+            This is a danger alert.
+          </div>
+
+          <div class="alert alert-warning" role="alert" style="background-color: #D8BA8E;">
+            This is a warning alert.
+          </div>
+
+          <!-- Alerts Component Code -->
+          <pre>
+            &lt;div class="alert alert-success" role="alert" style="background-color: #91C07D;"&gt;
+              This is a success alert.
+            &lt;/div&gt;
+
+            &lt;div class="alert alert-danger" role="alert" style="background-color: #d16b42;"&gt;
+              This is a danger alert.
+            &lt;/div&gt;
+
+            &lt;div class="alert alert-warning" role="alert" style="background-color: #D8BA8E;"&gt;
+              This is a warning alert.
+            &lt;/div&gt;
+          </pre>
+        </div>
+
+
       </section>
     </main>
   </body>
@@ -145,5 +268,6 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
-  <script src='script/menu.js'></script>
+  <script src="script/menu.js"></script>
+  <script src="script/snippetBox.js"></script>
 </html>
