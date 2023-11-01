@@ -3,28 +3,28 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 // Sample data for the stacked chart
 const stackedChartData = [
   {
-    date: new Date("2015-01-01"),
+    date: "2015-01-01",
     apples: 3840,
     bananas: 1920,
     cherries: 960,
     durians: 400,
   },
   {
-    date: new Date("2015-02-01"),
+    date: "2015-02-01",
     apples: 1600,
     bananas: 1440,
     cherries: 960,
     durians: 400,
   },
   {
-    date: new Date("2015-03-01"),
+    date: "2015-03-01",
     apples: 640,
     bananas: 960,
     cherries: 640,
     durians: 400,
   },
   {
-    date: new Date("2015-04-01"),
+    date: "2015-04-01",
     apples: 320,
     bananas: 480,
     cherries: 640,
@@ -36,7 +36,7 @@ const stackedChartData = [
 // Dimensions and margins for the chart
 const width = 600;
 const height = 400;
-const margin = { top: 20, right: 30, bottom: 30, left: 40 };
+const margin = { top: 25, right: 40, bottom: 80, left: 80 };
 
 // Create an SVG container
 const svg = d3
@@ -44,6 +44,21 @@ const svg = d3
   .append("svg")
   .attr("width", width)
   .attr("height", height);
+
+// Add a title
+svg
+  .append("text")
+  .text("Stacked Chart")
+  .attr("x", width / 2)
+  .attr("y", margin.top - 10)
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px")
+  .style("fill", "black");
+
+// Create a group element for the chart area with margins
+const chart = svg
+  .append("g")
+  .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // Parse the date format
 const parseDate = d3.timeParse("%Y-%m-%d");
@@ -60,7 +75,7 @@ const series = d3
 const x = d3
   .scaleBand()
   .domain(stackedChartData.map((d) => d.date))
-  .range([margin.left, width - margin.right])
+  .range([0, width - margin.left - margin.right])
   .padding(0.1);
 
 const y = d3
@@ -76,8 +91,7 @@ const color = d3
   .range(["#d16b42", "#91C07D", "#946E45", "#D8BA8E"]);
 
 // Create the chart elements
-svg
-  .append("g")
+chart
   .selectAll("g")
   .data(series)
   .enter()
@@ -96,14 +110,24 @@ svg
 const xAxis = d3.axisBottom(x);
 const yAxis = d3.axisLeft(y);
 
-svg
+chart
   .append("g")
   .attr("class", "x-axis")
   .attr("transform", `translate(0,${height - margin.bottom})`)
-  .call(xAxis);
-
-svg
+  .call(xAxis)
+  .selectAll("text") // Select all the tick text elements
+  .attr("transform", "rotate(15)") // Rotate the text to 15 degrees
+  .style("text-anchor", "start") // Adjust text anchor
+  .style("font-size", "10px") // Optionally adjust font size
+  
+chart
   .append("g")
   .attr("class", "y-axis")
-  .attr("transform", `translate(${margin.left},0)`)
-  .call(yAxis);
+  .call(yAxis)
+  .append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("x", -height / 2)
+  .attr("y", -50) // Adjust the distance from the axis
+  .attr("text-anchor", "middle")
+  .style("font-size", "14px")
+  .text("Value"); // Y-axis label

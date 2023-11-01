@@ -5,9 +5,13 @@ const pieChartData = [500, 300, 800, 200];
 const pieChartColors = ["#d16b42", "#91C07D", "#946E45", "#D8BA8E"]; // Color labels
 
 // Dimensions and margins for the chart
-const width = 500;
+const width = 600;
 const height = 400;
-const radius = Math.min(width, height) / 2;
+const marginTop = 45;
+const marginRight = 30;
+const marginBottom = 45;
+const marginLeft = 30;
+const radius = Math.min(width, 300) / 2;
 
 // Create a color scale for the pie chart
 const color = d3.scaleOrdinal().range(pieChartColors);
@@ -74,7 +78,7 @@ svg
   .append('text')
   .text('Pie Chart')
   .attr('x', 0)
-  .attr('y', -height / 2 - 10)
+  .attr('y', -180)
   .attr('text-anchor', 'middle')
   .style('font-size', '16px')
   .style('fill', 'black');
@@ -86,18 +90,18 @@ const legend = svg
   .enter()
   .append('g')
   .attr('class', 'legend')
-  .attr('transform', (d, i) => `translate(${width / 2 + 5},${i * 20})`); // Adjust the x position here
+  .attr('transform', (d, i) => `translate(${35},${i * 20})`);
 
 legend
   .append('rect')
-  .attr('x', -15)
+  .attr('x', 125)
   .attr('width', 10)
   .attr('height', 10)
   .attr('fill', (d, i) => color(i));
 
 legend
   .append('text')
-  .attr('x', 0)
-  .attr('y', 5)
+  .attr('x', 140)
+  .attr('y', 10)
   .attr('text-anchor', 'start')
   .text((d) => d);

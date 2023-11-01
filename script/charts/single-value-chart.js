@@ -3,9 +3,10 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 // Sample data for the single-value chart
 const singleValueData = 75; // Replace with your data
 
-// Dimensions for the chart
-const width = 400;
+// Dimensions and margins for the chart
+const width = 300;
 const height = 300;
+const margin = { top: 20, right: 10, bottom: 20, left: 10 };
 
 // Create an SVG container for the single-value chart
 const svg = d3
@@ -13,6 +14,15 @@ const svg = d3
   .append('svg')
   .attr('width', width)
   .attr('height', height);
+
+// Add a title
+svg
+  .append('text')
+  .attr('x', width / 2)
+  .attr('y', margin.top)
+  .attr('text-anchor', 'middle')
+  .style('font-size', '16px')
+  .text('Single Value Chart');
 
 // Create a text element to display the single value
 svg
