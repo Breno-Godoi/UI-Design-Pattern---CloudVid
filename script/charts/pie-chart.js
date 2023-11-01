@@ -2,7 +2,7 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 // Sample data for the pie chart
 const pieChartData = [500, 300, 800, 200];
-const pieChartColors = ["Red", "Green", "Blue", "Orange"]; // Color labels
+const pieChartColors = ["#d16b42", "#91C07D", "#946E45", "#D8BA8E"]; // Color labels
 
 // Dimensions and margins for the chart
 const width = 500;
@@ -10,7 +10,7 @@ const height = 400;
 const radius = Math.min(width, height) / 2;
 
 // Create a color scale for the pie chart
-const color = d3.scaleOrdinal(d3.schemeCategory10);
+const color = d3.scaleOrdinal().range(pieChartColors);
 
 // Create the SVG container
 const svg = d3

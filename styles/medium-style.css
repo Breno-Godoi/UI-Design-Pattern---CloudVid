@@ -1,6 +1,5 @@
-@media only screen and (min-width:1025px) {
-    
-      /* Header Styles */
+/* Header Styles for medium screens */
+@media only screen and (min-width: 1025px) {
   header {
     background-color: #d16b42;
     color: #fff;
@@ -11,22 +10,22 @@
     align-items: center; /* Align items vertically */
   }
 
-  .container-main{
+  .container-main {
     display: flex;
     justify-content: center;
     padding: 3rem 6rem;
   }
-  
-  /* Navigation Menu Styles */
 
-.header-sm-menu--active{
+  /* Navigation Menu Styles for medium screens */
+  .header-sm-menu--active {
     display: none;
-}
-
-  .header-main-ham-menu-cont{
-    display: none
   }
-  .navbar-nav{
+
+  .header-main-ham-menu-cont {
+    display: none;
+  }
+
+  .navbar-nav {
     display: flex;
     margin: 5px;
   }
@@ -40,15 +39,14 @@
     align-items: center;
     padding: 1rem 2rem;
   }
-  
+
   .nav-item {
     margin-right: 15px;
     font-size: 20px;
   }
 }
 
-/* snippet box style */
-
+/* Responsive Snippet Box Styles */
 pre {
   position: relative;
   background: #dac4a3;
@@ -66,18 +64,18 @@ pre {
 }
 
 .copy-button {
-position: absolute;
-top: 2px;
-right: 10px;
-cursor: pointer;
-color: #fff;
-background: #322315;
-border-radius: 0.5em;
-padding: 2px 7px;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  background: #322315;
+  border-radius: 0.5em;
+  padding: 2px 7px;
 }
 
-.copy-button:hover{
-color: #000;
+.copy-button:hover {
+  color: #000;
 }
 
 .breadcrumb-text-color .breadcrumb-item a {
@@ -89,4 +87,17 @@ color: #000;
   background-color: #322315;
   height: 8px;
   margin: 20px 0;
+}
+
+/* Data Visualization Styles for medium screens */
+.pad-angle-input {
+  background: #91C07D;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+/* Set the background color for specific charts */
+#singleValueChart, #metricChart {
+  background-color: #D8BA8E;
 }

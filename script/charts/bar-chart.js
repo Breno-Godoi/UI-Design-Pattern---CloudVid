@@ -42,7 +42,7 @@ svg
   .attr('y', (d) => yScale(d.value))
   .attr('width', xScale.bandwidth())
   .attr('height', (d) => height - yScale(d.value))
-  .attr('fill', 'steelblue');
+  .attr('fill', '#91C07D');
 
 svg
   .append('g')

@@ -106,10 +106,36 @@
         <h2>Data Visualization</h2>
         <!-- Add data visualization examples and content here -->
         <p>
-          Data visualization is a crucial aspect of the trend analytics
-          dashboard. Here are some examples of interactive charts and graphs you
-          can incorporate into your dashboard to make the data more insightful
-          and engaging.
+          Data visualization is a powerful tool for illuminating trends and
+          insights in your data. It empowers informed decision-making by
+          presenting data clearly and meaningfully. Here are our standards for
+          crafting compelling visual data stories.
+        </p>
+
+        <p>
+          <strong
+            >Ticks and Tick labels for axes must exist on all charts.</strong
+          >
+          Every chart should include ticks and tick labels for both the x and y
+          axes to ensure readers can interpret data accurately. This provides a
+          visual reference for scale and measurement.
+        </p>
+
+        <p>
+          <strong
+            >Must include the chart name and axes labels for every
+            chart.</strong
+          >
+          To enhance chart clarity, make sure to include a descriptive chart
+          name along with clear labels for the x and y axes. This practice aids
+          readers in understanding the context and purpose of each chart.
+        </p>
+
+        <p>
+          <strong>Ensure that all charts are easily readable</strong>
+          Readability is a priority. Charts should be designed to convey data
+          effectively. Use labels, appropriate colors, and accessible design
+          methods to make charts as clear as possible to readers.
         </p>
 
         <hr class="hr-separator" />
@@ -117,17 +143,30 @@
         <!-- Multi-Value Charts Section -->
         <h3>Multi-Value Charts</h3>
         <p>
-          You should include at least 6 multi-value charts to display various
-          video metrics. Here are examples of some of them:
+          Multi-Value Charts play a key role in comparing and visualizing
+          various video metrics. Here are different chart types, each designed
+          for specific applications.
         </p>
 
         <!-- Example: Multi-Value Bar Chart -->
         <div class="chart">
           <h4>Bar Chart</h4>
           <p>
-            A bar chart is great for comparing video statistics across different
-            categories.
+            Bar Charts are used to compare data across different categories.
+            They boast a sleek design with no rounded corners. The space between
+            bars is maintained at 50% of the bar width for clarity. Stacked bar
+            charts rely on distinct categorical color combos, ensuring data
+            differentiation.
           </p>
+          <!-- Add a dropdown for data selection -->
+          <div class="data-selection">
+            <label for="dataSelect">Select Data:</label>
+            <select id="dataSelect">
+              <option value="views">Views</option>
+              <option value="likes">Likes</option>
+              <option value="comments">Comments</option>
+            </select>
+          </div>
           <div id="barChart" class="chart-container"></div>
         </div>
 
@@ -135,27 +174,35 @@
         <div class="chart">
           <h4>Line Chart</h4>
           <p>
-            A line chart can visualize trends in video performance over time.
+            Our Line Charts emphasize a mature, editorial style. Solid lines
+            depict actual data trends, while dotted lines are used for general
+            traits such as averages or projections. These lines are consistently
+            2pts in weight and straight, facilitating easy data analysis.
           </p>
           <div id="lineChart" class="chart-container"></div>
         </div>
 
-        <!-- Add more multi-value chart examples here -->
-
-        <hr class="hr-separator" />
-
-        <!-- Single-Value Charts Section -->
-        <h3>Single-Value Charts</h3>
-        <p>
-          You should include at least 3 single-value charts to highlight key
-          video metrics. Here's an example:
-        </p>
+        <!-- Interactive Scatter Plot -->
+        <div class="chart">
+          <h4>Interactive Scatter Plot with Highlighting and Brushing</h4>
+          <p>
+            Scatter Plot Charts allow you to explore data correlations with
+            colored points, each measuring 8px by 8px. To enhance
+            differentiation, we employ various shapes like circles, squares,
+            triangles, diamonds, and upside-down triangles for multiple data
+            sets.
+          </p>
+          <div id="scatterPlot" class="chart-container"></div>
+        </div>
 
         <!-- Example: Single-Value Pie Chart -->
         <div class="chart">
           <h4>Pie Chart</h4>
           <p>
-            A pie chart can display the distribution of video views by source.
+            Pie Charts provide a visual representation of data distribution by
+            source. However, it's recommended to use other chart types like
+            percent bar graphs for more effective data display. If you must use
+            a Pie Chart, employ categorical color combos for clarity.
           </p>
           <!-- Add this input element to control the pad angle -->
           <div class="pad-angle-control">
@@ -167,32 +214,77 @@
               max="0.5"
               step="0.01"
               value="0.25"
+              class="pad-angle-input"
             />
             <span id="padAngleValue">0.25</span>
           </div>
           <div id="pieChart" class="chart-container"></div>
         </div>
 
-        <!-- Add more single-value chart examples here -->
+        <!-- Example: Donut Chart -->
+        <div class="chart">
+          <h4>Donut Chart</h4>
+          <p>
+            Donut Charts are a variation of Pie Charts, featuring a hole in the
+            center. Use them for displaying data distribution while maintaining
+            readability and aesthetics. Employ categorical color combos for
+            clear differentiation.
+          </p>
+          <div id="donutChart" class="chart-container"></div>
+        </div>
+
+        <!-- Example: Stacked Chart -->
+        <div class="chart">
+          <h4>Stacked Chart</h4>
+          <p>
+            Stacked Charts excel at illustrating how different categories
+            contribute to overall performance. They offer a comprehensive view
+            of data composition, making it easier to analyze and compare
+            contributions.
+          </p>
+          <div id="stackedChart" class="chart-container"></div>
+        </div>
 
         <hr class="hr-separator" />
 
-        <!-- Interactive Scatter Plot -->
+        <!-- Single-Value Charts Section -->
+        <h3>Single-Value Charts</h3>
+        <p>
+          Single-Value Charts are crucial for highlighting key video metrics
+          with precision. Here's an example:
+        </p>
+
+        <!-- Example: Single-Value Chart -->
         <div class="chart">
-          <h3>Interactive Scatter Plot with Highlighting and Brushing</h3>
+          <h3>Single-Value Chart</h3>
           <p>
-            A scatter plot allows you to explore correlations between video
-            metrics. You can interactively highlight and brush data to focus on
-            specific data points.
+            Single-Value Charts provide a focused representation of specific
+            data points. They are designed to highlight essential video metrics
+            in a clear and concise manner.
           </p>
-          <div id="scatterPlot" class="chart-container"></div>
+          <div id="singleValueChart" class="chart-container"></div>
         </div>
+
+        <!-- Example: Single-Value Metric Chart -->
+        <div class="chart">
+          <h4>Metric Chart</h4>
+          <p>
+            A Metric Chart is a single-value representation of a specific video
+            metric, providing a clear and focused view of essential data.
+          </p>
+          <div id="metricChart" class="chart-container"></div>
+        </div>
+
       </section>
     </main>
     <script src="script/menu.js"></script>
-    <script src="script/scatter-plot.js" type="module"></script>
-    <script src="script/bar-chart.js" type="module"></script>
-    <script src="script/line-chart.js" type="module"></script>
-    <script src="script/pie-chart.js" type="module"></script>
+    <script src="script/charts/scatter-plot.js" type="module"></script>
+    <script src="script/charts/bar-chart.js" type="module"></script>
+    <script src="script/charts/line-chart.js" type="module"></script>
+    <script src="script/charts/pie-chart.js" type="module"></script>
+    <script src="script/charts/stacked-chart.js" type="module"></script>
+    <script src="script/charts/donut-chart.js" type="module"></script>
+    <script src="script/charts/single-value-chart.js" type="module"></script>
+    <script src="script/charts/metric-chart.js" type="module"></script>
   </body>
 </html>

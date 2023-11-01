@@ -40,8 +40,8 @@ const circles = svg
   .append('circle')
   .attr('cx', (d) => xScale(d.x))
   .attr('cy', (d) => yScale(d.y))
-  .attr('r', 5) // Radius of the circles
-  .attr('fill', 'steelblue');
+  .attr('r', 8) // Radius of the circles
+  .attr('fill', '#91C07D');
 
 // Create x and y axes
 svg

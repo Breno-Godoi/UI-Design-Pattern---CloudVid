@@ -52,8 +52,8 @@ svg.append("g")
 svg.append("path")
   .datum(lineChartData)
   .attr("fill", "none")
-  .attr("stroke", "steelblue")
-  .attr("stroke-width", 2)
+  .attr("stroke", '#91C07D')
+  .attr("stroke-width", 5)
   .attr("d", line);
 
 // Append the SVG element to an HTML container
