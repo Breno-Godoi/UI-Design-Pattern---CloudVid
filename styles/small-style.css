@@ -63,7 +63,7 @@ blockquote {
 }
 
 header {
-  background-color: #d16b42;
+  background-color: #ce5c2fbe;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -103,6 +103,15 @@ header {
   padding: 10 0 0 10;
   box-sizing: inherit;
   font-family: inherit;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb a {
+  color: #946E45;
+}
+
+.breadcrumb .active {
+  color: #946E45;
 }
 
 /* menu mobile*/
@@ -225,22 +234,22 @@ blockquote {
 }
 
 /* UI Component Styles */
-.card  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
-.card-title{
+.card-title {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.card-btn{
+.card-btn {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-header {
@@ -278,10 +287,7 @@ blockquote {
   border: 1px solid #b85229;
 }
 
-
-
 /* snippet box style */
-
 
 pre {
   position: relative;
@@ -292,8 +298,8 @@ pre {
   white-space: pre-wrap;
   border: 1px solid #e6e7e9;
   margin: 5%;
-  text-align: left; 
-  margin-left: 0; 
+  text-align: left;
+  margin-left: 0;
 }
 
 .snippet {
@@ -325,6 +331,46 @@ pre {
   background-color: #322315;
   height: 8px;
   margin: 20px 0;
+}
+
+/* Style for the Pad Angle Control Component */
+.pad-angle-control {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.pad-angle-control label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.pad-angle-input {
+  background: #91c07d; /* Background color for the range input */
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-appearance: none; /* Remove default styling on WebKit browsers */
+}
+
+.pad-angle-input::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling on WebKit browsers */
+  width: 15px; /* Adjust the width of the thumb */
+  height: 15px; /* Adjust the height of the thumb */
+  background: #91c07d; /* Color for the thumb */
+  border: 1px solid #322315; /* Border around the thumb */
+  border-radius: 50%; /* Make the thumb round */
+  cursor: pointer;
+  margin-top: -7px; /* Center the thumb vertically */
+}
+
+/* Style for the Pad Angle Value Display */
+#padAngleValue {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #91c07d; /* Text color */
 }
 
 /* Logo Styles */

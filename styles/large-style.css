@@ -2,8 +2,17 @@
 
 /* Sliders */
 .pad-angle-input {
-    background: #91C07D;
-    outline: none; 
-    border: none; 
-    width: 100%;
-  }
+  background: #91c07d;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb a {
+  color: #946e45;
+}
+
+.breadcrumb .active {
+  color: #946e45;
+}

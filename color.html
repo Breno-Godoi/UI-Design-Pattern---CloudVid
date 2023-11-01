@@ -1,145 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI Pattern Library - Group 5</title>
-    <link rel="CloudVid icon" href="images/logo-ico.ico" type="image/CloudVid"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit&display=swap" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/small-style.css" />
-    <link rel="stylesheet" href="styles/medium-style.css" />
-    <link rel="stylesheet" href="styles/large-style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo.png" alt="Company Logo" />
-      </div>
-      <div class="title-client">
-        <h1>Cloud Vid Pattern Library - Group 5</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Pattern Library - Group 5</title>
+  <link rel="CloudVid icon" href="images/logo-ico.ico" type="image/CloudVid" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/small-style.css" />
+  <link rel="stylesheet" href="styles/medium-style.css" />
+  <link rel="stylesheet" href="styles/large-style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Company Logo" />
     </div>
-    </header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="components.html">UI Components</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="color.html">Color</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layouts.html">Page Layouts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="typography.html">Typography</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="visualization.html">Data Visualization</a>
-          </li>
-        </ul>
-        <div class="header-main-ham-menu-cont">
-          <img
-            src="images\menu-hamburguer.png"
-            alt="hamburger menu"
-            class="header-main-ham-menu"
-            id="hamburger-menu"
-          />
-          <img
-            src="images\x.png"
-            alt="hamburger menu close"
-            class="header-main-ham-menu-close disp-none"
-            id="close-menu"
-          />
+    <div class="title-client">
+      <h1>Cloud Vid Pattern Library - Group 5</h1>
+    </div>
+  </header>
+
+  <!-- Section for the header image with overlay -->
+  <section class="header-image">
+    <img src="images/overlay.jpg" alt="Header Image">
+    <div class="overlay" style="background-color: rgba(255, 0, 0, 0.5);"></div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components.html">UI Components</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="color.html">Color</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="layouts.html">Page Layouts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="typography.html">Typography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="visualization.html">Data Visualization</a>
+        </li>
+      </ul>
+      <div class="header-main-ham-menu-cont">
+        <img src="images\menu-hamburguer.png" alt="hamburger menu" class="header-main-ham-menu" id="hamburger-menu" />
+        <img src="images\x.png" alt="hamburger menu close" class="header-main-ham-menu-close disp-none"
+          id="close-menu" />
+      </div>
+    </div>
+  </nav>
+
+  <div class="header-sm-menu">
+    <ul class=" header-sm-menu-links">
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="components.html">UI Components</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="color.html">Color</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="layouts.html">Page Layouts</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="typography.html">Typography</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="visualization.html">Data Visualization</a>
+      </li>
+    </ul>
+  </div>
+  <main class="container-main">
+    <section id="color">
+      <!-- Breadcrumb Component -->
+      <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="components.html">UI Components</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Color</li>
+        </ol>
+      </nav>
+
+      <h2>Color Palette</h2>
+      <p>
+        Our color palette consists of Pastel and Earthy Colours.
+      </p>
+
+      <p class="mt-3">
+        They were chosed to represent the CloudVid brand in every moment.
+      </p>
+
+      <p>We simply separate our colors into two classes: Brand Color and Functional Colors:</p>
+
+      <hr class="hr-separator" />
+
+      <h3>Brand color</h3>
+
+      <p>This is Cloud Vid color, that builds our mark in the internet:</p>
+
+      <div class="color-palette row">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="color-box" style="background-color: #7CB695">
+            <div class="color-label">Brand Color</div>
+            <div class="color-tag">#7CB695</div>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <div class="header-sm-menu">
-        <ul class=" header-sm-menu-links">
-          <li class="header-sm-menu-link">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="components.html">UI Components</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="color.html">Color</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="layouts.html">Page Layouts</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="typography.html">Typography</a>
-                </li>
-                <li class="header-sm-menu-link">
-                  <a class="nav-link" href="visualization.html">Data Visualization</a>
-                </li>
-              </ul>
-          </div>
-    <main class="container-main">
-      <section id="color">
-        <h2>Color Palette</h2>
-        <p>
-          Our color palette consists of Pastel and Earthy Colours.
-        </p>
+      <hr class="hr-separator" />
 
-        <div class="color-palette row">
-          <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" style="background-color: #d16b42">
-                  <div class="color-label">Color 1</div>
-                  <div class="color-tag">#d16b42</div>
-              </div>
+      <h3>Functional colors</h3>
+
+      <p>Those are the colors you'll find around our website, and in every content created (or authorized) by Cloud Vid
+      </p>
+
+      <p> There aren't many rules about how to use colors (since creativity is one of our greatest passions...), just
+        follow these options, and have fun!</p>
+
+      <div class="color-palette row">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="color-box" style="background-color: #d16b42">
+            <div class="color-label">Color 1</div>
+            <div class="color-tag">#d16b42</div>
           </div>
-          <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" style="background-color: #D8BA8E">
-                  <div class="color-label">Color 2</div>
-                  <div class="color-tag">#D8BA8E</div>
-              </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="color-box" style="background-color: #D8BA8E">
+            <div class="color-label">Color 2</div>
+            <div class="color-tag">#D8BA8E</div>
           </div>
-          <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" style="background-color: #322315">
-                  <div class="color-label">Color 3</div>
-                  <div class="color-tag">#322315</div>
-              </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="color-box" style="background-color: #322315">
+            <div class="color-label">Color 3</div>
+            <div class="color-tag">#322315</div>
           </div>
-          <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" style="background-color: #946E45">
-                  <div class="color-label">Color 4</div>
-                  <div class="color-tag">#946E45</div>
-              </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="color-box" style="background-color: #946E45">
+            <div class="color-label">Color 4</div>
+            <div class="color-tag">#946E45</div>
           </div>
-          <div class="col-md-4 col-sm-6 col-12">
-              <div class="color-box" style="background-color: #91C07D">
-                  <div class="color-label">Color 5</div>
-                  <div class="color-tag">#91C07D</div>
-              </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="color-box" style="background-color: #91C07D">
+            <div class="color-label">Color 5</div>
+            <div class="color-tag">#91C07D</div>
           </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="color-box" style="background-color: #ce5c2fbe">
+            <div class="color-label">Color 6</div>
+            <div class="color-tag">#ce5c2fbe</div>
+          </div>
+        </div>
       </div>
+
       
+    </section>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src='script/menu.js'></script>
 
-
-        <p class="mt-3">
-          They were chosed to represent the CloudVid brand in every moment.
-        </p>
-      </section>
-    </main>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
-  <script src='script/menu.js'></script>
 </html>

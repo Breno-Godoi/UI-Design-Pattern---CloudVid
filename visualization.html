@@ -1,299 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI Pattern Library - Group 5</title>
-    <link
-      rel="CloudVid icon"
-      href="images/logo-ico.ico"
-      type="image/CloudVid"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Handlee&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/small-style.css" />
-    <link rel="stylesheet" href="styles/medium-style.css" />
-    <link rel="stylesheet" href="styles/large-style.css" />
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo.png" alt="Company Logo" />
-      </div>
-      <div class="title-client">
-        <h1>Cloud Vid Pattern Library - Group 5</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Pattern Library - Group 5</title>
+  <link rel="CloudVid icon" href="images/logo-ico.ico" type="image/CloudVid" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/small-style.css" />
+  <link rel="stylesheet" href="styles/medium-style.css" />
+  <link rel="stylesheet" href="styles/large-style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Company Logo" />
     </div>
-    </header>
+    <div class="title-client">
+      <h1>Cloud Vid Pattern Library - Group 5</h1>
+    </div>
+  </header>
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="components.html">UI Components</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="color.html">Color</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layouts.html">Page Layouts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="typography.html">Typography</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="visualization.html">Data Visualization</a>
-          </li>
-        </ul>
-        <div class="header-main-ham-menu-cont">
-          <img
-            src="images\menu-hamburguer.png"
-            alt="hamburger menu"
-            class="header-main-ham-menu"
-            id="hamburger-menu"
-          />
-          <img
-            src="images\x.png"
-            alt="hamburger menu close"
-            class="header-main-ham-menu-close disp-none"
-            id="close-menu"
-          />
-        </div>
-      </div>
-    </nav>
+  <!-- Section for the header image with overlay -->
+  <section class="header-image">
+    <img src="images/overlay.jpg" alt="Header Image">
+    <div class="overlay" style="background-color: rgba(255, 0, 0, 0.5);"></div>
+  </section>
 
-    <div class="header-sm-menu">
-      <ul class="header-sm-menu-links">
-        <li class="header-sm-menu-link">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="header-sm-menu-link">
+        <li class="nav-item">
           <a class="nav-link" href="components.html">UI Components</a>
         </li>
-        <li class="header-sm-menu-link">
+        <li class="nav-item active">
           <a class="nav-link" href="color.html">Color</a>
         </li>
-        <li class="header-sm-menu-link">
+        <li class="nav-item">
           <a class="nav-link" href="layouts.html">Page Layouts</a>
         </li>
-        <li class="header-sm-menu-link">
+        <li class="nav-item">
           <a class="nav-link" href="typography.html">Typography</a>
         </li>
-        <li class="header-sm-menu-link">
+        <li class="nav-item">
           <a class="nav-link" href="visualization.html">Data Visualization</a>
         </li>
       </ul>
+      <div class="header-main-ham-menu-cont">
+        <img src="images\menu-hamburguer.png" alt="hamburger menu" class="header-main-ham-menu" id="hamburger-menu" />
+        <img src="images\x.png" alt="hamburger menu close" class="header-main-ham-menu-close disp-none"
+          id="close-menu" />
+      </div>
     </div>
-    <main class="container-main">
-      <section id="visualization">
-        <h2>Data Visualization</h2>
-        <!-- Add data visualization examples and content here -->
+  </nav>
+
+  <div class="header-sm-menu">
+    <ul class="header-sm-menu-links">
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="components.html">UI Components</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="color.html">Color</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="layouts.html">Page Layouts</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="typography.html">Typography</a>
+      </li>
+      <li class="header-sm-menu-link">
+        <a class="nav-link" href="visualization.html">Data Visualization</a>
+      </li>
+    </ul>
+  </div>
+  <main class="container-main">
+    <section id="visualization">
+      <!-- Breadcrumb Component -->
+      <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="components.html">UI Components</a></li>
+          <li class="breadcrumb-item"><a href="color.html">Color</a></li>
+          <li class="breadcrumb-item"><a href="layouts.html">Page Layouts</a></li>
+          <li class="breadcrumb-item"><a href="typography.html">Typography</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data Visualization</li>
+        </ol>
+      </nav>
+
+      <h2>Data Visualization</h2>
+      <!-- Add data visualization examples and content here -->
+      <p>
+        Data visualization is a powerful tool for illuminating trends and
+        insights in your data. It empowers informed decision-making by
+        presenting data clearly and meaningfully. Here are our standards for
+        crafting compelling visual data stories.
+      </p>
+
+      <p>
+        <strong>Ticks and Tick labels for axes must exist on all charts.</strong>
+        Every chart should include ticks and tick labels for both the x and y
+        axes to ensure readers can interpret data accurately. This provides a
+        visual reference for scale and measurement.
+      </p>
+
+      <p>
+        <strong>Must include the chart name and axes labels for every
+          chart.</strong>
+        To enhance chart clarity, make sure to include a descriptive chart
+        name along with clear labels for the x and y axes. This practice aids
+        readers in understanding the context and purpose of each chart.
+      </p>
+
+      <p>
+        <strong>Ensure that all charts are easily readable</strong>
+        Readability is a priority. Charts should be designed to convey data
+        effectively. Use labels, appropriate colors, and accessible design
+        methods to make charts as clear as possible to readers.
+      </p>
+
+      <hr class="hr-separator" />
+
+      <!-- Multi-Value Charts Section -->
+      <h3>Multi-Value Charts</h3>
+      <p>
+        Multi-Value Charts play a key role in comparing and visualizing
+        various video metrics. Here are different chart types, each designed
+        for specific applications.
+      </p>
+
+      <!-- Example: Multi-Value Bar Chart -->
+      <div class="chart">
+        <h4>Bar Chart</h4>
         <p>
-          Data visualization is a powerful tool for illuminating trends and
-          insights in your data. It empowers informed decision-making by
-          presenting data clearly and meaningfully. Here are our standards for
-          crafting compelling visual data stories.
+          Bar Charts are used to compare data across different categories.
+          They boast a sleek design with no rounded corners. The space between
+          bars is maintained at 50% of the bar width for clarity. Stacked bar
+          charts rely on distinct categorical color combos, ensuring data
+          differentiation.
         </p>
-
-        <p>
-          <strong
-            >Ticks and Tick labels for axes must exist on all charts.</strong
-          >
-          Every chart should include ticks and tick labels for both the x and y
-          axes to ensure readers can interpret data accurately. This provides a
-          visual reference for scale and measurement.
-        </p>
-
-        <p>
-          <strong
-            >Must include the chart name and axes labels for every
-            chart.</strong
-          >
-          To enhance chart clarity, make sure to include a descriptive chart
-          name along with clear labels for the x and y axes. This practice aids
-          readers in understanding the context and purpose of each chart.
-        </p>
-
-        <p>
-          <strong>Ensure that all charts are easily readable</strong>
-          Readability is a priority. Charts should be designed to convey data
-          effectively. Use labels, appropriate colors, and accessible design
-          methods to make charts as clear as possible to readers.
-        </p>
-
-        <hr class="hr-separator" />
-
-        <!-- Multi-Value Charts Section -->
-        <h3>Multi-Value Charts</h3>
-        <p>
-          Multi-Value Charts play a key role in comparing and visualizing
-          various video metrics. Here are different chart types, each designed
-          for specific applications.
-        </p>
-
-        <!-- Example: Multi-Value Bar Chart -->
-        <div class="chart">
-          <h4>Bar Chart</h4>
-          <p>
-            Bar Charts are used to compare data across different categories.
-            They boast a sleek design with no rounded corners. The space between
-            bars is maintained at 50% of the bar width for clarity. Stacked bar
-            charts rely on distinct categorical color combos, ensuring data
-            differentiation.
-          </p>
-          <!-- Add a dropdown for data selection -->
-          <div class="data-selection">
-            <label for="dataSelect">Select Data:</label>
-            <select id="dataSelect">
-              <option value="views">Views</option>
-              <option value="likes">Likes</option>
-              <option value="comments">Comments</option>
-            </select>
+        <!-- Add a dropdown for data selection -->
+        <div class="data-selection">
+          <label for="dataSelect">Select Data:</label>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              style="background-color: #91C07D; border: 1px solid #322315; color: #fff;">
+              Select an Option
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" style="color: #91C07D;">Option 1</a>
+              <a class="dropdown-item" href="#" style="color: #91C07D;">Option 2</a>
+              <a class="dropdown-item" href="#" style="color: #91C07D;">Option 3</a>
+            </div>
           </div>
-          <div id="barChart" class="chart-container"></div>
         </div>
+        <div id="barChart" class="chart-container"></div>
+      </div>
 
-        <!-- Example: Multi-Value Line Chart -->
-        <div class="chart">
-          <h4>Line Chart</h4>
-          <p>
-            Our Line Charts emphasize a mature, editorial style. Solid lines
-            depict actual data trends, while dotted lines are used for general
-            traits such as averages or projections. These lines are consistently
-            2pts in weight and straight, facilitating easy data analysis.
-          </p>
-          <div id="lineChart" class="chart-container"></div>
-        </div>
-
-        <!-- Interactive Scatter Plot -->
-        <div class="chart">
-          <h4>Interactive Scatter Plot with Highlighting and Brushing</h4>
-          <p>
-            Scatter Plot Charts allow you to explore data correlations with
-            colored points, each measuring 8px by 8px. To enhance
-            differentiation, we employ various shapes like circles, squares,
-            triangles, diamonds, and upside-down triangles for multiple data
-            sets.
-          </p>
-          <p>
-            It must include a highlight and brush data
-            points feature for a more in-depth analysis. Simply click on specific data
-            points to highlight them or create a selection area by clicking and
-            dragging your mouse over the chart. This functionality makes it easy
-            to focus on a particular range of data points and analyze trends,
-            identify clusters, or compare specific data points effortlessly.
-          </p>
-          <div id="scatterPlot" class="chart-container"></div>
-        </div>
-
-        <!-- Example: Single-Value Pie Chart -->
-        <div class="chart">
-          <h4>Pie Chart</h4>
-          <p>
-            Pie Charts provide a visual representation of data distribution by
-            source. However, it's recommended to use other chart types like
-            percent bar graphs for more effective data display. If you must use
-            a Pie Chart, employ categorical color combos for clarity.
-          </p>
-          <!-- Add this input element to control the pad angle -->
-          <div class="pad-angle-control">
-            <label for="padAngle">Pad Angle:</label>
-            <input
-              type="range"
-              id="padAngle"
-              min="0"
-              max="0.5"
-              step="0.01"
-              value="0.25"
-              class="pad-angle-input"
-            />
-            <span id="padAngleValue">0.25</span>
-          </div>
-          <div id="pieChart" class="chart-container"></div>
-        </div>
-
-        <!-- Example: Donut Chart -->
-        <div class="chart">
-          <h4>Donut Chart</h4>
-          <p>
-            Donut Charts are a variation of Pie Charts, featuring a hole in the
-            center. Use them for displaying data distribution while maintaining
-            readability and aesthetics. Employ categorical color combos for
-            clear differentiation.
-          </p>
-          <div id="donutChart" class="chart-container"></div>
-        </div>
-
-        <!-- Example: Stacked Chart -->
-        <div class="chart">
-          <h4>Stacked Chart</h4>
-          <p>
-            Stacked Charts excel at illustrating how different categories
-            contribute to overall performance. They offer a comprehensive view
-            of data composition, making it easier to analyze and compare
-            contributions.
-          </p>
-          <div id="stackedChart" class="chart-container"></div>
-        </div>
-
-        <hr class="hr-separator" />
-
-        <!-- Single-Value Charts Section -->
-        <h3>Single-Value Charts</h3>
+      <!-- Example: Multi-Value Line Chart -->
+      <div class="chart">
+        <h4>Line Chart</h4>
         <p>
-          Single-Value Charts are crucial for highlighting key video metrics
-          with precision. Here's an example:
+          Our Line Charts emphasize a mature, editorial style. Solid lines
+          depict actual data trends, while dotted lines are used for general
+          traits such as averages or projections. These lines are consistently
+          2pts in weight and straight, facilitating easy data analysis.
         </p>
+        <div id="lineChart" class="chart-container"></div>
+      </div>
 
-        <!-- Example: Single-Value Chart -->
-        <div class="chart">
-          <h3>Single-Value Chart</h3>
-          <p>
-            Single-Value Charts provide a focused representation of specific
-            data points. They are designed to highlight essential video metrics
-            in a clear and concise manner.
-          </p>
-          <div id="singleValueChart" class="chart-container"></div>
-        </div>
+      <!-- Interactive Scatter Plot -->
+      <div class="chart">
+        <h4>Interactive Scatter Plot with Highlighting and Brushing</h4>
+        <p>
+          Scatter Plot Charts allow you to explore data correlations with
+          colored points, each measuring 8px by 8px. To enhance
+          differentiation, we employ various shapes like circles, squares,
+          triangles, diamonds, and upside-down triangles for multiple data
+          sets.
+        </p>
+        <p>
+          It must include a highlight and brush data
+          points feature for a more in-depth analysis. Simply click on specific data
+          points to highlight them or create a selection area by clicking and
+          dragging your mouse over the chart. This functionality makes it easy
+          to focus on a particular range of data points and analyze trends,
+          identify clusters, or compare specific data points effortlessly.
+        </p>
+        <div id="scatterPlot" class="chart-container"></div>
+      </div>
 
-        <!-- Example: Single-Value Metric Chart -->
-        <div class="chart">
-          <h4>Metric Chart</h4>
-          <p>
-            A Metric Chart is a single-value representation of a specific video
-            metric, providing a clear and focused view of essential data.
-          </p>
-          <div id="metricChart" class="chart-container"></div>
+      <!-- Example: Single-Value Pie Chart -->
+      <div class="chart">
+        <h4>Pie Chart</h4>
+        <p>
+          Pie Charts provide a visual representation of data distribution by
+          source. However, it's recommended to use other chart types like
+          percent bar graphs for more effective data display. If you must use
+          a Pie Chart, employ categorical color combos for clarity.
+        </p>
+        <!-- Add this input element to control the pad angle -->
+        <div class="pad-angle-control">
+          <label for="padAngle">Pad Angle:</label>
+          <input type="range" id="padAngle" min="0" max="0.5" step="0.01" value="0.25" class="pad-angle-input" />
+          <span id="padAngleValue">0.25</span>
         </div>
-      </section>
-    </main>
-    <script src="script/menu.js"></script>
-    <script src="script/charts/scatter-plot.js" type="module"></script>
-    <script src="script/charts/bar-chart.js" type="module"></script>
-    <script src="script/charts/line-chart.js" type="module"></script>
-    <script src="script/charts/pie-chart.js" type="module"></script>
-    <script src="script/charts/stacked-chart.js" type="module"></script>
-    <script src="script/charts/donut-chart.js" type="module"></script>
-    <script src="script/charts/single-value-chart.js" type="module"></script>
-    <script src="script/charts/metric-chart.js" type="module"></script>
-  </body>
+        <div id="pieChart" class="chart-container"></div>
+      </div>
+
+      <!-- Example: Donut Chart -->
+      <div class="chart">
+        <h4>Donut Chart</h4>
+        <p>
+          Donut Charts are a variation of Pie Charts, featuring a hole in the
+          center. Use them for displaying data distribution while maintaining
+          readability and aesthetics. Employ categorical color combos for
+          clear differentiation.
+        </p>
+        <div id="donutChart" class="chart-container"></div>
+      </div>
+
+      <!-- Example: Stacked Chart -->
+      <div class="chart">
+        <h4>Stacked Chart</h4>
+        <p>
+          Stacked Charts excel at illustrating how different categories
+          contribute to overall performance. They offer a comprehensive view
+          of data composition, making it easier to analyze and compare
+          contributions.
+        </p>
+        <div id="stackedChart" class="chart-container"></div>
+      </div>
+
+      <hr class="hr-separator" />
+
+      <!-- Single-Value Charts Section -->
+      <h3>Single-Value Charts</h3>
+      <p>
+        Single-Value Charts are crucial for highlighting key video metrics
+        with precision. Here's an example:
+      </p>
+
+      <!-- Example: Single-Value Chart -->
+      <div class="chart">
+        <h3>Single-Value Chart</h3>
+        <p>
+          Single-Value Charts provide a focused representation of specific
+          data points. They are designed to highlight essential video metrics
+          in a clear and concise manner.
+        </p>
+        <div id="singleValueChart" class="chart-container"></div>
+      </div>
+
+      <!-- Example: Single-Value Metric Chart -->
+      <div class="chart">
+        <h4>Metric Chart</h4>
+        <p>
+          A Metric Chart is a single-value representation of a specific video
+          metric, providing a clear and focused view of essential data.
+        </p>
+        <div id="metricChart" class="chart-container"></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script/menu.js"></script>
+  <script src="script/charts/scatter-plot.js" type="module"></script>
+  <script src="script/charts/bar-chart.js" type="module"></script>
+  <script src="script/charts/line-chart.js" type="module"></script>
+  <script src="script/charts/pie-chart.js" type="module"></script>
+  <script src="script/charts/stacked-chart.js" type="module"></script>
+  <script src="script/charts/donut-chart.js" type="module"></script>
+  <script src="script/charts/single-value-chart.js" type="module"></script>
+  <script src="script/charts/metric-chart.js" type="module"></script>
+</body>
+
 </html>
