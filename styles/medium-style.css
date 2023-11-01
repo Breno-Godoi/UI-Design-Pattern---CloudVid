@@ -46,6 +46,10 @@
   }
 }
 
+.code{
+  padding: 10px 110px;
+}
+
 /* Responsive Snippet Box Styles */
 pre {
   position: relative;
@@ -56,6 +60,8 @@ pre {
   white-space: pre-wrap;
   border: 1px solid #e6e7e9;
   margin: 5%;
+  text-align: left; 
+  margin-left: 0; 
 }
 
 .snippet {
@@ -110,3 +116,4 @@ pre {
 #singleValueChart, #metricChart {
   background-color: #D8BA8E;
 }
+

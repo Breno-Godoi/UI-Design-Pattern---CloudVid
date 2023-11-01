@@ -72,10 +72,18 @@ header {
   align-items: center; /* Align items vertically */
 }
 
+.title-client {
+  padding: 10px 20px 10px 0px;
+}
+
 .container-main {
   display: flex;
   justify-content: center;
   padding: 2.5rem 2.5rem;
+}
+
+.code {
+  padding: 5px 20px;
 }
 
 /* Navigation Menu Styles */
@@ -217,8 +225,22 @@ blockquote {
 }
 
 /* UI Component Styles */
-.card {
+.card  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   margin-top: 20px;
+}
+
+.card-title{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-btn{
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-header {
@@ -256,7 +278,10 @@ blockquote {
   border: 1px solid #b85229;
 }
 
+
+
 /* snippet box style */
+
 
 pre {
   position: relative;
@@ -267,6 +292,8 @@ pre {
   white-space: pre-wrap;
   border: 1px solid #e6e7e9;
   margin: 5%;
+  text-align: left; 
+  margin-left: 0; 
 }
 
 .snippet {
