@@ -50,6 +50,14 @@
   padding: 10px 110px;
 }
 
+/* Make the header image responsive */
+#header-image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
 /* Breadcrumb Styles */
 .breadcrumb a {
   color: #946e45;
@@ -165,4 +173,19 @@ pre {
 #singleValueChart,
 #metricChart {
   background-color: #d8ba8e;
+}
+
+
+/* Style for the footer */
+.site-footer {
+  background-color: #D8BA8E;
+  color: #322315; /* Text color */
+  text-align: center;
+  padding: 5px 0;
+}
+
+.footer-container {
+  max-width: 1200px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add padding inside the container */
 }

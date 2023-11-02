@@ -105,13 +105,21 @@ header {
   font-family: inherit;
 }
 
+/* Make the header image responsive */
+#header-image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
 /* Breadcrumb Styles */
 .breadcrumb a {
-  color: #946E45;
+  color: #946e45;
 }
 
 .breadcrumb .active {
-  color: #946E45;
+  color: #946e45;
 }
 
 /* menu mobile*/
@@ -394,4 +402,18 @@ pre {
   outline: none;
   border: none;
   width: 100%;
+}
+
+/* Style for the footer */
+.site-footer {
+  background-color: #D8BA8E;
+  color: #322315; /* Text color */
+  text-align: center;
+  padding: 5px 0;
+}
+
+.footer-container {
+  max-width: 1200px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add padding inside the container */
 }
