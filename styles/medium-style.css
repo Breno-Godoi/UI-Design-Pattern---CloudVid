@@ -31,7 +31,7 @@
   }
 
   .navbar {
-    background-color: #ce5c2fbe;
+    background-color: #D8BA8E;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -150,6 +150,15 @@ pre {
   font-size: 18px;
   margin-left: 10px;
   color: #91c07d; /* Text color */
+}
+
+/*Layout page*/
+
+.layout-preview img {
+  max-width: 100%; /* Maximum width is 100% of the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra space beneath the images */
+  margin: 0 auto; /* Center the images horizontally (optional) */
 }
 
 /* Data Visualization Styles for medium screens */
